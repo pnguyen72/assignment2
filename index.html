@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment 2</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <h2>Navigation</h2>
+        <nav>
+          <ul>
+            <li><a href="#legend">Legend</a></li>
+            <li>
+              <a href="#content">Module 3: Requirements Determination</a><br />
+              <ul>
+                <li>
+                  <a href="#types">Types of requirements</a>
+                  <ul>
+                    <li>
+                      <a href="#subcategories"
+                        >Subcategories of non-functional requirements</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#discover">How to discover requirements?</a>
+                  <ul>
+                    <li>
+                      <a href="#techniques">Common techniques</a>
+                    </li>
+                    <li>
+                      <a href="#characteristics">Techniques characteristics</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div id="legend">
+        <h2>Legend</h2>
+        <span class="slides">Slides information</span> <br />
+        <span class="book">Book information</span><br />
+        <span class="prof">Information from teacher</span><br />
+        <span class="guess">Assumption/Guess</span>
+      </div>
+      <br />
+      <div>
+        <h1 id="content">Module 3: Requirements Determination</h1>
+        <p>
+          A <b>requirement</b> is <b>something the system should do</b>, or a
+          <b>characteristic</b> it should have.
+        </p>
+      </div>
+      <div>
+        <h2 id="types">Types of requirements</h2>
+        <ul>
+          <li>
+            <b>Business</b>:
+            <span class="book">reasons for proposing project</span>
+          </li>
+          <li>
+            <b>User</b>:
+            <span class="book">what the users need to do</span>
+          </li>
+          <li>
+            <b>Functional</b>:
+            <span class="book"
+              >what the system should do / what features it should have</span
+            >
+          </li>
+          <li>
+            <b>Non-functional</b>:
+            <span class="book">characteristics the system should have</span>
+          </li>
+          <li>
+            <b>System</b>:
+            <span class="book">how the system should be built</span>
+          </li>
+        </ul>
+        <p>
+          <span class="prof"
+            >These are not mutually exclusive. A feature/characteristic may fill
+            multiple requirement types.</span
+          >
+        </p>
+        <h3 id="subcategories">Subcategories of non-functional requirements</h3>
+        <ol>
+          <li>
+            <b>Operational</b>: physical and technical compatibility
+            <br />
+            Examples:
+            <ul>
+              <li><span class="guess">run on the Steam Deck</span></li>
+              <li>integrable with the comany's existing system</li>
+            </ul>
+          </li>
+          <li>
+            <b>Performance</b>: speed, capacity, availability
+            <br />
+            Examples:
+            <ul>
+              <li>available 24/7</li>
+              <li>supporting 300 simultaneous users</li>
+            </ul>
+          </li>
+          <li>
+            <b>Security</b>: who has authorized access under what circumstances
+            <br />
+            Examples:
+            <ul>
+              <li>antivirus measures</li>
+              <li>only direct managers can see staff personnel records</li>
+            </ul>
+          </li>
+          <li>
+            <b>Cultural and Political</b>: cultural, political, legal factors
+            that affect the system
+            <br />
+            Examples:
+            <ul>
+              <li>company policy is to only buy computers from Dell</li>
+              <li>
+                supporting local currency and measurement units
+                <span class="guess"><b>(*)</b></span>
+              </li>
+            </ul>
+          </li>
+        </ol>
+        <p>
+          <span class="guess"
+            ><b>(*)</b> I <i>think</i> this is an example of a feature that fits
+            multiple requirement types because it also sounds like an
+            <abbr title="functional requirement">FR</abbr>.</span
+          >
+        </p>
+      </div>
+      <div>
+        <figure>
+          <a href="https://dummyimage.com/600x400/000000/000000">
+            <img
+              src="https://dummyimage.com/600x400/000000/000000"
+              alt="blank image"
+            />
+          </a>
+          <figcaption>How much I currently understand this course</figcaption>
+        </figure>
+      </div>
+      <div>
+        <h2 id="discover">How to discover requirements?</h2>
+        <h3 id="techniques">Common techniques</h3>
+        <ul>
+          <li>Interviews</li>
+          <li>Joint Application Development</li>
+          <li>Questionnaires</li>
+          <li>Document Analysis</li>
+          <li>Observation</li>
+        </ul>
+        <p>
+          Each technique has <b>strengths and weaknesses</b>. Most projects
+          benefit from a <b>combination</b> of techniques.
+        </p>
+        <h3 id="characteristics">Technique characteristics</h3>
+        <ul>
+          <li>
+            <b>Type of information</b>:
+            <span class="book"
+              >Understanding the as-is system, identifying improvements, or
+              developing the to-be system.</span
+            >
+          </li>
+          <li>
+            <b>Depth of information</b>:
+            <span class="book"
+              >How rich and detailed is the collected information. How useful is
+              the technique at obtaining not only facts and opinions, but also
+              why those facts and opinions exist.</span
+            >
+            <br />
+            <span class="guess"
+              >E.g., “What kind of currency option should be implemented in the
+              payment system? (Depth on the topic of payment.)</span
+            >
+          </li>
+          <li>
+            <b>Breadth of information</b>:
+            <span class="book"
+              >The range of information that can be collected.</span
+            >
+            <br />
+            <span class="guess"
+              >E.g., “When implementing a new system, what are your priorities
+              for the payment system, inventory management, user interface, and
+              customer support?" (Breadth, since this covers multiple
+              topics.)</span
+            >
+          </li>
+          <li>
+            <b>Integration of information</b>:
+            <span class="book"
+              >How easy it is to resolve conflicting info from different
+              sources.
+            </span>
+          </li>
+          <li>
+            <b>User involvement</b>:
+            <span class="book"
+              >The amount of time and energy the users must devote to the
+              analysis process.</span
+            >
+          </li>
+          <li>
+            <b>Cost</b>:
+            <span class="guess">Self-explanatory.</span>
+          </li>
+        </ul>
+        <table>
+          <tr>
+            <td></td>
+            <th>Interviews</th>
+            <th><abbr title="Joint Application Development">JAD</abbr></th>
+            <th>Questionnaires</th>
+            <th>Document Analysis</th>
+            <th>Observation</th>
+          </tr>
+          <tr>
+            <td>Type of information</td>
+            <td>As-is, improvements, to-be</td>
+            <td>As-is, improvements, to-be</td>
+            <td>As-is, improvements</td>
+            <td>As-is</td>
+            <td>As-is</td>
+          </tr>
+          <tr>
+            <td>Depth of information</td>
+            <td>High</td>
+            <td>High</td>
+            <td>Medium</td>
+            <td>Low</td>
+            <td>Low</td>
+          </tr>
+          <tr>
+            <td>Breadth of information</td>
+            <td>Low</td>
+            <td>Medium</td>
+            <td>High</td>
+            <td>High</td>
+            <td>Low</td>
+          </tr>
+          <tr>
+            <td>Integration of information</td>
+            <td>Low</td>
+            <td>High</td>
+            <td>Low</td>
+            <td>Low</td>
+            <td>Low</td>
+          </tr>
+          <tr>
+            <td>User involvement</td>
+            <td>Medium</td>
+            <td>High</td>
+            <td>Low</td>
+            <td>Low</td>
+            <td>Low</td>
+          </tr>
+          <tr>
+            <td>Cost</td>
+            <td>Medium</td>
+            <td>Low-Medium</td>
+            <td>Low</td>
+            <td>Low</td>
+            <td>Low-Medium</td>
+          </tr>
+        </table>
+      </div>
+      <br />
+    </main>
+    <footer>
+      <div>
+        <i>Written in honor of Prophet Thorsten, peace be upon him.</i>
+      </div>
+    </footer>
+  </body>
+</html>
